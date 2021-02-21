@@ -17,8 +17,14 @@
 			<div class="hero" data-bg-image="images/banner.png">
 				<div class="container">
 					<form action="#" class="find-location">
-						<input type="text" placeholder="Your location...">
-						<input type="submit" value="Go!">
+					
+						<h1><label for="city">Ｙour location:</label>
+							<select name="cities" id="cities">
+							  <option value="NYC">NYC</option>
+							  <option value="Taipei">Taipei</option>
+							  <option value="Beijing">Beijing</option>
+							</select></h1>
+					
 					</form>
 
 				</div>
@@ -116,6 +122,7 @@
 					</div>
 				</div>
 			</div>
+			<script src="fetch.js"></script>
 	</body>
 
 </html>
