@@ -1,121 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+<!DOCTYPE html> 
+<html>
+ <head> 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+ </head>  
+ <body>
+   <header>
+      <div class="title">
+          <h1 class="sansserif">Recipe of Classic Drinks</h1>
+      </div>
+      <div class="menu"></div>
+    </header>
+
+    <div class= search>
+      <p class="sansserif">Search your drink here:</p>
+      <select name="search name" id="search name">
+      <option value="Mojito">Mojito</option>
+      <option value="French 75">French 75</option>
+      <option value="Manhattan">Manhattan</option>
+      <option value="Old Fashioned">Old Fashioned</option>
+      <option value="Margarita">Margarita</option>
+      <option value="Cosmopolitan">Cosmopolitan</option>
+      <option value="Negroni">Negroni</option>
+      <option value="Moscow Mule">Moscow Mule</option>
+      <option value="Martini">Martini</option>
+      <option value="Wisky Sour">Wisky Sour</option>
+      <option value="Spritz">Spritz</option>
+      <option value="Gimlet">Gimlet</option>
+      <option value="Sazerac">Sazerac</option>\
+
+      </select></h1>
+      
+      </div>
+
+    <div id="Section" class="wrapper">
+      <div class="intro">
+         
+     </div>
 
 
-		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
-		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <nav class="dots">
+      <ul>
+        <li><a data-link="section-1">1</a></li>
+        <li><a data-link="section-2">2</a></li>
+        <li><a data-link="section-3">3</a></li>
+        <li><a data-link="section-4">4</a></li>
+      </ul>
+    </nav>
+  
+  <section id="section-1">
+         <p class="sansserif">Hello! Welcome to Recipe of Classic Drinks.</p>
+         <p class="sansserif">Search the names of the drinks and look into their recipe!</p>
+         <p class="sansserif">  Hope you enjoy it! </p>
+  </section>
+  
+  <section id="section-2">
+  
+    <h1>Screenshot & Share</h1>
 
-		<link rel="stylesheet" href="style.css">
-	</head>
+    <div class="home" onclick="home()"> </div>
+    <div class="back">back to top</div>
+   
+  </section>
+  
+  <section id="section-3">
+    <h1>Cocktail list</h1>
+  
+   
+    </section>
+  </section>
+  <section id="section-4">
+    <h1>About me</h1>
+    <div class="self"> 
+      <p class="sansserif">Hi, my name is Ellie. I am a cocktail lover.</p>
+      <p class="sansserif">Hope you can learn more about the cocktails you like or even explore new ones! </p>
+      </div>
 
-	<body>
+   
 
-			<div class="hero" data-bg-image="images/banner.png">
-				<div class="container">
-					<form action="#" class="find-location">
-						<input type="text" placeholder="Your location...">
-						<input type="submit" value="Go!">
-					</form>
+      </div>
+     
+  </section>
 
-				</div>
-			</div>
-			<div class="forecast-table">
-				<div class="container">
-					<div class="forecast-container">
-						<div class="today forecast">
-							<div class="forecast-header">
-								<div class="day">Tuesday</div>
-								<div class="date">2 Feb</div>
-							</div> <!-- .forecast-header -->
-							<div class="forecast-content">
-								<div class="location">Taipei</div>
-								<div class="degree">
-									<div class="num">23<sup>o</sup>C</div>
-									<div class="forecast-icon">
-										<img src="images/icons/icon-1.svg" alt="" width=90>
-									</div>	
-								</div>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Tuesday</div>
-							</div> 
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-3.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Wednesday</div>
-							</div> 
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-5.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Thursday</div>
-							</div> 
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-9.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Friday</div>
-							</div> 
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-12.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Saturday</div>
-							</div> 
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-13.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-						<div class="forecast">
-							<div class="forecast-header">
-								<div class="day">Sunday</div>
-							</div> 
-							<div class="forecast-content">
-								<div class="forecast-icon">
-									<img src="images/icons/icon-1.svg" alt="" width=48>
-								</div>
-								<div class="degree">23<sup>o</sup>C</div>
-								<small>18<sup>o</sup></small>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</body>
+  </div>
 
+ 
+  
+
+
+
+  <!-- LG: Add sound file to src attribute -->
+  <audio id="sound-file" src="css/image/audio.mp3"></audio>
+
+  <script src="js/custom.js"></script>
+</body>
 </html>
