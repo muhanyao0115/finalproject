@@ -1,16 +1,180 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Intro to JSON Challenge</title>
-<body>
+ <head> 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+ 
 
-    <div id="content">
-        <h2 id="temp"></h2>
-        <h3 id="weather"></h3>
-        <ul id="forecast"></ul>
+ </head>  
+ <body>
+   <header>
+      <div class="title">
+          <h1 class="sansserif">Recipe of Classic Drinks</h1>
+      </div>
+      <div class="menu"></div>
+    </header>
+    
+    <div class= search>
+      <p class="sansserif">Hello! Welcome to Recipe of Classic Drinks.</p>
+      <p class="sansserif">You can play around the data visualiztion to find out the ingredients of some famous drinks!</p>
+      <p class="sansserif">  Hope you enjoy it! </p>
+     
+      </div>
+
+    <div id="Section" class="wrapper">
+      <div class="intro">
+       
+        <svg width="960" height="600"></svg>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script> 
+        var svg = d3.select("svg");
+        var width = svg.attr("width");
+        var height = svg.attr("height");
+
+        var graph = {
+
+        nodes:[
+          {name: "Old Fashioned"},
+          {name: "Sugar"},
+          {name: "Bourbon"},
+          {name: "Bitters"},
+        ],
+        links:[{source:"Sugar",target:"Old Fashioned"},
+               {source:"Bourbon",target:"Old Fashioned"},
+               {source:"Bitters",target:"Old Fashioned"},]
+      };
+      var simulation= d3
+      .forceSimulation(graph.nodes)
+      .force(
+        "link",
+        d3.forceLink(gragh.links).id(function(d){
+          return d.name;
+        })
+      )
+      .force("charge", d3.forveManyBody(),strength(-30))
+      .force("center", d3.forceCenter(width / 2, height / 2))
+      .on("tick", ticked);
+
+      var link = svg
+        .append("g")
+        .selectAll("line")
+        .data(graph.links)
+        .enter()
+        .append("line")
+        .attr("stroke-width", function(d){
+          return 3;
+        })
+        .style("stroke","pink");
+
+        var node = svg
+        .append("g")
+        .selectAll("circle")
+        .data(graph.nodes)
+        .enter()
+        .append("circle")
+        .attr("r",5)
+        .attr("fill",function(d){
+          return "orange";
+        })
+        .attr("stroke","yellow");
+
+        function ticked(){
+          link 
+          .attr("x1", function(d){
+          return d.source.x;
+        })
+        .attr("y1", function(d){
+          return d.source.y;
+        })
+        .attr("x2", function(d){
+          return d.source.x;
+        })
+        .attr("y2", function(d){
+          return d.source.y;
+        });
+        node
+        .attr("cx", function(d){
+          return d.x;
+        })
+        .attr("cy", function(d){
+          return d.y;
+        });
+        }
+       </script>
+        
+        
+
+
+
+
+
+
+
+     </div>
+
+
+    <nav class="dots">
+      <ul>
+        <li><a data-link="section-1">1</a></li>
+        <li><a data-link="section-2">2</a></li>
+        <li><a data-link="section-3">3</a></li>
+        <li><a data-link="section-4">4</a></li>
+      </ul>
+    </nav>
+    <div class="home" onclick="home()"> </div>
+    <div class="back">search result</div>
+  <section id="section-1">
+    <h1>Search for the images here<h1>
+      <select name="search name" id="search name">
+        <option value="Old Fashioned">Old Fashioned</option>
+        <option value="White Russian">White Russian</option>
+        <option value="Manhattan">Manhattan</option>
+        <option value="Daquiri">Daquiri</option>
+        <option value="Negroni">Negroni</option>
+        <option value="Sidecar">Sidecar</option>
+        <option value="Cuba Libre">Cuba Libre</option>
+        <option value="Boulevardier">Boulevardier</option>
+        <option value="Tequila Sunrise">Tequila Sunrise</option>
+        </select>
+    
+  </section>
+  <section id="section-2">
+    <h1>Recipe List</h1>
+    <div class= list>
+    <h2>Old Fashioned</h2>
+    <p class="sansserif">"Sugar","Bourbon","Bitters" (30%-35%)</p>
+    <h2>White Russian</h2>
+    <p class="sansserif">"Vodka","Kahlua","Cream" (25%-30%)</p>
+    <h2>Manhattan</h2>
+    <p class="sansserif">"Rye","Sweet Vermouth","Bitters" (30%-35%)</p>
+    <h2>Daiquiri</h2>
+    <p class="sansserif">"Light Rum","Lime juice","sugar" (30%)</p>
+    <h2>Negroni</h2>
+    <p class="sansserif">"Gin","Campari","Sweet Vermouth" (23%)</p>
+    <h2>Sidecar</h2>
+    <p class="sansserif">"Brandy","Orange Liqueur","Lemon Juice" (20%-25%)</p>
+    <h2>Cuba Libre</h2>
+    <p class="sansserif">"Dark Rum","Cola","Lime Juice" (10%-15%) </p>
+    <h2>Boulevardier</h2>
+    <p class="sansserif">"Whisky","Campari","Sweet Vermouth" (22%)</p>
+    <h2>Tequila Sunrise</h2>
+    <p class="sansserif">"Tequila","Orange Juice","Grenadine" (10%-15%)</p>
     </div>
+  </section>
+  
+  <section id="section-3">
+    <h1>About me</h1>
+    <div class="self"> 
+      <p class="sansserif">Hi, my name is Ellie. I am a cocktail lover.</p>
+      <p class="sansserif">Hope you can learn more about the cocktails you like or even explore new ones! </p>
+  </section>
 
-    <script src="app.js"></script>
-</body> 
+ 
+
+  </div>
+
+ 
+
+</body>
 </html>
