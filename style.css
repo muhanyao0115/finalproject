@@ -181,8 +181,7 @@ section:nth-of-type(4) {
 }
 
 .slide-in1 {
- 
-  background-image: url(image/style.png);
+  /* background-image: url(image/style.png); */
   height: 100px;
   width: 100px;
   background-size: 100%;
@@ -192,7 +191,7 @@ transition: all .5s;
 }
 
 .slide-in1:hover {
-  background-image:url(image/style.gif);
+  /* background-image:url(image/style.gif); */
   transition: 0.1s 0.1s;
   transform: scale(1);
   animation-duration: 0.3s;
@@ -203,7 +202,7 @@ transition: all .5s;
 
 .home {
   position: fixed;
-  background-image: url(image/style.png);
+  /* background-image: url(image/style.png); */
   height: 400px;
   width: 400px;
   background-size: 100%;
@@ -212,7 +211,7 @@ transition: all .5s;
   z-index: 1;
 }
 .home:hover {
-  background-image:url(image/style.gif);
+  /* background-image:url(image/style.gif); */
   transition: 0.1s 0.1s;
   transform: scale(1);
   animation-duration: 0.3s;
@@ -332,7 +331,7 @@ transition: all .5s;
 
   .style {
     position: absolute;
-    background-image: url(image/style.png);
+    /* background-image: url(image/style.png); */
     background-size: 100%;
     top: 5%;
     left: -10%;
@@ -343,7 +342,7 @@ transition: all .5s;
   }
   
   .style:hover {
-    background-image:url(image/style.gif);
+    /* background-image:url(image/style.gif); */
     transition: 0.1s 0.1s;
     transform: scale(1);
     animation-duration: 0.3s;
