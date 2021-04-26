@@ -15,32 +15,35 @@
       <div class="menu"></div>
     </header>
     
-    <div class= search>
-      <p class="sansserif">Hello! Welcome to Recipe of Classic Drinks.</p>
-      <p class="sansserif">You can play around the data visualiztion to find out the ingredients of some famous drinks!</p>
-      <p class="sansserif">  Hope you enjoy it! </p>
-     </div>
+   
 
 
     <div id="Section" class="wrapper">
       <div class="intro">
        
-        <svg width="960" height="600"></svg>
+        <svg width="800" height="800"></svg>
      </div>
 
 
     <nav class="dots">
       <ul>
-        <li><a data-link="section-1">1</a></li>
-        <li><a data-link="section-2">2</a></li>
-        <li><a data-link="section-3">3</a></li>
-        <li><a data-link="section-4">4</a></li>
+        <li><a data-link="section-1">OldFashioned</a></li>
+        <li><b data-link="section-2">Manhattan</b></li>
+        <li><c data-link="section-3">Daiquiri</c></li>
+        <li><d data-link="section-4">CubaLibre</d></li>
+        <li><e data-link="section-1">WhiteRussian</e></li>
+        <li><f data-link="section-2">Negroni</f></li>
+        <li><g data-link="section-3">Boulevardier</g></li>
+        <li><h data-link="section-4">Sidecar</h></li>
+        <li><i data-link="section-4">TequilaSunrise</i></li>
+
       </ul>
     </nav>
     <div class="home" onclick="home()"> </div>
     <div class="back">search result</div>
   <section id="section-1">
     <h1>Search for the images here<h1>
+      <div class="rect slide-in align-left"></div>
       <select name="search name" id="search name">
         <option value="Old Fashioned">Old Fashioned</option>
         <option value="White Russian">White Russian</option>
@@ -97,20 +100,83 @@
   const graph = {
   nodes: [
     {name: "Old Fashioned", group: 1},
-    {name: "Manhattan", group: 2},
-    {name: "Sugar", group: 1},
+    {name: "Sugar1", group: 1},
     {name: "Bourbon", group: 1},
-    {name: "Bitters", group: 1},
-    {name: "Rye", group: 1},
-    {name: "Sweet Vermouth", group: 2}
+    {name: "Bitters1", group: 1},
+    {name: "Manhatten", group: 2},
+    {name: "Rye", group: 2},
+    {name: "Sweet Vermouth1", group: 2},
+    {name: "Bitters2", group: 2},
+    {name: "Daiquiri", group: 3},
+    {name: "Light Rum", group: 3},
+    {name: "Lime Juice1", group: 3},
+    {name: "Sugar2", group: 3},
+    {name: "Cuba Libre", group: 4},
+    {name: "Dark Rum", group: 4},
+    {name: "Cola", group: 4},
+    {name: "Lime Juice2", group: 4},
+    {name: "Negroni", group: 5},
+    {name: "Gin", group: 5},
+    {name: "Campari1", group: 5},
+    {name: "Sweet Vermouth2", group: 5},
+    {name: "Sidecar", group: 6},
+    {name: "Brandy", group: 6}, 
+    {name: "Orange Liqueur", group: 6},  
+    {name: "Lime Juice3", group: 6}, 
+    {name: "White Russian", group: 7}, 
+    {name: "Vodka", group: 7}, 
+    {name: "Kahlua", group: 7}, 
+    {name: "Cream", group: 7},
+    {name: "Boulevardier", group: 8},
+    {name: "Whisky", group: 8},
+    {name: "Campari2", group: 8},
+    {name: "Sweet Vermouth3", group: 8},
+    {name: "Tequila Sunrise", group: 9},
+    {name: "Tequila", group: 9},
+    {name: "Orange Juice", group: 9},
+    {name: "Grenadine", group: 9}
+    
+    
+    
   ],
   links:[
-         {source:"Sugar",target:"Old Fashioned"},
+         {source:"Sugar1",target:"Old Fashioned"},
          {source:"Bourbon",target:"Old Fashioned"},
-         {source:"Bitters",target:"Old Fashioned"},
-         {source:"Rye",target:"Old Fashioned"},
-         {source:"Sweet Vermouth",target:"Old Fashioned"},
-         {source:"Bitters",target:"Old Fashioned"},
+         {source:"Bitters1",target:"Old Fashioned"},
+         {source:"Rye",target:"Manhatten"},
+         {source:"Sweet Vermouth1",target:"Manhatten"},
+         {source:"Bitters2",target:"Manhatten"},
+         {source:"Bitters1",target:"Bitters2"},
+         {source:"Light Rum",target:"Daiquiri"},
+         {source:"Lime Juice1",target:"Daiquiri"},
+         {source:"Sugar2",target:"Daiquiri"},
+         {source:"Sugar2",target:"Sugar1"},
+         {source:"Dark Rum",target:"Cuba Libre"},
+         {source:"Cola",target:"Cuba Libre"},
+         {source:"Lime Juice2",target:"Cuba Libre"},
+         {source:"Lime Juice2",target:"Lime Juice1"},
+         {source:"Gin",target:"Negroni"},
+         {source:"Campari1",target:"Negroni"},
+         {source:"Sweet Vermouth2",target:"Negroni"},
+         {source:"Sweet Vermouth2",target:"Sweet Vermouth1"},
+         {source:"Sweet Vermouth2",target:"Sweet Vermouth3"},
+         {source:"Sweet Vermouth3",target:"Sweet Vermouth1"},
+         {source:"Brandy",target:"Sidecar"},
+         {source:"Orange Liqueur",target:"Sidecar"},
+         {source:"Lime Juice3",target:"Sidecar"},
+         {source:"Lime Juice3",target:"Lime Juice1"},
+         {source:"Lime Juice3",target:"Lime Juice2"},
+         {source:"Vodka",target:"White Russian"},
+         {source:"Kahlua",target:"White Russian"},
+         {source:"Cream",target:"White Russian"},
+         {source:"Sweet Vermouth3",target:"Boulevardier"},
+         {source:"Whisky",target:"Boulevardier"},
+         {source:"Campari2",target:"Boulevardier"},
+         {source:"Tequila",target:"Tequila Sunrise"}, 
+         {source:"Orange Juice",target:"Tequila Sunrise"},
+         {source:"Grenadine",target:"Tequila Sunrise"}    
+         
+
         ]
   };
   console.log(graph);
@@ -140,7 +206,6 @@ var link = svg
 
   //code to change colors based on group
   var color = d3.scaleOrdinal(d3.schemeCategory10);
-
   var node = svg
   .append("g")
   .selectAll("circle")
