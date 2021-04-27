@@ -1,11 +1,11 @@
 {"drinks":[  
-    {"name":"Old Fashioned", "ingredients":["Sugar","Bourbon","Bitters"],"alc.":"30%-35%"},
-    {"name":"Manhattan", "ingredients":["Rye","Sweet Vermouth","Bitters"],"alc.":"30%-35%"}, 
-    {"name":"Daiquiri", "ingredients":["Light Rum","Lime juice","Sugar"],"alc.":"30%"},  
-    {"name":"Cuba Libre", "ingredients":["Dark Rum","Cola","Lime Juice"],"alc.":"10%-15%"}, 
+    {"name":"Old Fashioned", "ingredients":["Sugar1","Bourbon","Bitters1"],"alc.":"30%-35%"},
+    {"name":"Manhattan", "ingredients":["Rye","Sweet Vermouth1","Bitters2"],"alc.":"30%-35%"}, 
+    {"name":"Daiquiri", "ingredients":["Light Rum","Lime Juice1","Sugar2"],"alc.":"30%"},  
+    {"name":"Cuba Libre", "ingredients":["Dark Rum","Cola","Lime Juice2"],"alc.":"10%-15%"}, 
     {"name":"White Russian", "ingredients":["Vodka","Kahlua","Cream"],"alc.":"25%-30%"},       
-    {"name":"Negroni", "ingredients":["Gin","Campari","Sweet Vermouth"],"alc.":"23%"},
-    {"name":"Boulevardier", "ingredients":["Whisky","Campari","Sweet Vermouth"],"alc.":"22%"},
-    {"name":"Sidecar", "ingredients":["Brandy","Orange Liqueur","Lemon Juice"],"alc.":"20%-25%"},
+    {"name":"Negroni", "ingredients":["Gin","Campari1","Sweet Vermouth2"],"alc.":"23%"},
+    {"name":"Boulevardier", "ingredients":["Whisky","Campari2","Sweet Vermouth3"],"alc.":"22%"},
+    {"name":"Sidecar", "ingredients":["Brandy","Orange Liqueur","Lime Juice3"],"alc.":"20%-25%"},
     {"name":"Tequila Sunrise", "ingredients":["Tequila","Orange Juice","Grenadine"],"alc.":"10%-15%"}     
 ]}  
