@@ -19,7 +19,7 @@ time, mark, audio, video {
 *{font-family: 'Sansita Swashed', cursive;}
     
 body {
-  background-color: #006d77;
+  background-color: #83c5be;
   box-sizing: border-box;
   padding: 0 0%;
   width: 100%;
@@ -53,7 +53,7 @@ header {
   display: inline-block;
   padding: 0 0 0 1%;
   width: 48%;
-  color:#006d77;
+  color:#83c5be;
   font-size: 1.5em;
   line-height: 200%;
 }
