@@ -134,21 +134,144 @@ section:nth-of-type(4) {
   list-style-type: none;
 }
 
-.dots a {
-  background:#ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-  display: block;
-  margin-bottom: 10px;
-  height: 10px;
-  width: 10px;
-  /* hide text  */
-  text-indent: -9999px;
+.dots {
+  position: fixed;
+  left: 2%;
+  top: 20%;
+  z-index: 1;
 }
 
-.dots a.current {
-  background: grey;
+.dots ul {
+  list-style-type: none;
 }
+
+.dots a {
+  background:#027ebc;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
+
+.dots b {
+  background:#fe9100;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
+.dots c {
+  background:#0d9a00;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
+.dots d {
+  background:red;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
+.dots e {
+  background:#e27fe6;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
+.dots f {
+  background: #a667d0;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
+.dots g {
+  background:rgb(139, 139, 139);
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
+.dots h {
+  background:#644646;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
+.dots i {
+  background:#cbe927;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 20px;
+  height: 20px;
+  width: 20px;
+  /* hide text  */
+  text-indent: 30px;
+  color:white;
+  text-emphasis: none;
+}
+
 
 
 .rect {
