@@ -51,11 +51,12 @@ header {
 }
 .intro{
   display: inline-block;
-  padding: 0 0 0 1%;
-  width: 48%;
+  padding: 0 0 0 5%;
+  width: 60%;
   color:#83c5be;
   font-size: 1.5em;
   line-height: 200%;
+  height:100%
 }
 
 
@@ -84,6 +85,10 @@ h2 {
   margin-top: 0;
   color: #006d77;
   font-size: 30px;
+}
+
+.back{
+  color: #ffffff;
 }
 
 .sansserif{
@@ -121,17 +126,6 @@ section:nth-of-type(3) {
 section:nth-of-type(4) {
   background: #83c5be;
   height: 50vh;
-}
-
-.dots {
-  position: fixed;
-  left: 2%;
-  top: 80%;
-  z-index: 1;
-}
-
-.dots ul {
-  list-style-type: none;
 }
 
 .dots {
@@ -294,27 +288,24 @@ section:nth-of-type(4) {
 
 .slide-in {
  
-    background-image: url(image/selfie.jpg);
-    height: 500px;
-    width: 500px;
-    background-size: 100%;
- 
-  opacity: 0;
-  transition: all .5s;
+  background-image: url(image/boulevardier.JPG);
+  height: 500px;
+  width: 500px;
+  background-size: 100%;
+opacity: 0;
+transition: all .5s;
 }
-
 .slide-in1 {
-  /* background-image: url(image/style.png); */
+  background-image: url(image/oldfashioned.JPG);
   height: 100px;
   width: 100px;
   background-size: 100%;
-
 opacity: 0;
 transition: all .5s;
 }
 
 .slide-in1:hover {
-  /* background-image:url(image/style.gif); */
+  background-image: url(image/oldfashioned.JPG);
   transition: 0.1s 0.1s;
   transform: scale(1);
   animation-duration: 0.3s;
@@ -322,19 +313,34 @@ transition: all .5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
 }
+.align-left.slide-in {
+  transform: translateX(-50%) scale(0.95);
+}
 
+.align-right.slide-in1 {
+  transform: translateX(50%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+.slide-in1.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
 .home {
   position: fixed;
-  /* background-image: url(image/style.png); */
-  height: 400px;
-  width: 400px;
+  background-image: url(image/cocktailnew.png);
+  height: 300px;
+  width: 300px;
   background-size: 100%;
   right: -3%;
   top: 60%;
   z-index: 1;
 }
 .home:hover {
-  /* background-image:url(image/style.gif); */
+  background-image: url(image/cocktailnew.png);
   transition: 0.1s 0.1s;
   transform: scale(1);
   animation-duration: 0.3s;
@@ -348,7 +354,7 @@ transition: all .5s;
   height: 400px;
   width: 400px;
   background-size: 100%;
-  right: -13%;
+  right: -16%;
   top: 92%;
   z-index: 1;
 }
