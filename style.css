@@ -51,12 +51,13 @@ header {
 }
 .intro{
   display: inline-block;
-  padding: 0 0 0 5%;
+  padding: 0 0 0 3%;
   width: 60%;
   color:#83c5be;
   font-size: 1.5em;
-  line-height: 200%;
-  height:100%
+  line-height: 100%;
+  height:100%;
+  font-size: 15px;
 }
 
 
@@ -102,15 +103,12 @@ section {
   width: 100vw;
 }
 
-.self{
-  float: right;
-  margin-top: 5vh;
 
-}
 
 section:first-of-type {
-  background: #006d77;
+  background: #83c5be;
   height: 100vh;
+  float:left;
 }
 
 section:nth-of-type(2) {
@@ -119,19 +117,21 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(3) {
-  background: #006d77;
+  background: #83c5be;
   height:60vh;
 }
 
 section:nth-of-type(4) {
-  background: #83c5be;
+  background: #006d77;
   height: 50vh;
 }
 
+
+
 .dots {
-  position: fixed;
-  left: 2%;
-  top: 20%;
+position: absolute;
+  left: 50%;
+  top: 30%;
   z-index: 1;
 }
 
@@ -154,7 +154,7 @@ section:nth-of-type(4) {
 }
 
 
-.dots b {
+.dots k {
   background:#fe9100;
   border-radius: 100%;
   cursor: pointer;
@@ -252,7 +252,7 @@ section:nth-of-type(4) {
   text-emphasis: none;
 }
 
-.dots i {
+.dots j {
   background:#cbe927;
   border-radius: 100%;
   cursor: pointer;
@@ -266,10 +266,20 @@ section:nth-of-type(4) {
   text-emphasis: none;
 }
 
-
+.self{
+  left: 0px;
+  margin-top: 6vh;
+  width: 510px;
+}
+.arrow{
+  background-image: url(image/arrow.gif);
+  height: 150px;
+  width: 150px;
+  background-size: 100%; 
+}
 
 .rect {
-  background:#63B0CD;
+  background:#006d77;
   height: 500px;
   width: 500px;
 }
@@ -288,24 +298,28 @@ section:nth-of-type(4) {
 
 .slide-in {
  
-  background-image: url(image/boulevardier.JPG);
-  height: 500px;
-  width: 500px;
-  background-size: 100%;
-opacity: 0;
-transition: all .5s;
+    background-image: url(image/selfie.jpg);
+    height: 500px;
+    width: 500px;
+    background-size: 100%;
+ 
+  opacity: 100%;
+  transition: all .5s;
 }
+
 .slide-in1 {
-  background-image: url(image/oldfashioned.JPG);
+ 
+  background-image: url(image/style.png);
   height: 100px;
   width: 100px;
   background-size: 100%;
+
 opacity: 0;
 transition: all .5s;
 }
 
 .slide-in1:hover {
-  background-image: url(image/oldfashioned.JPG);
+  background-image:url(image/style.gif);
   transition: 0.1s 0.1s;
   transform: scale(1);
   animation-duration: 0.3s;
@@ -313,34 +327,19 @@ transition: all .5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
 }
-.align-left.slide-in {
-  transform: translateX(-50%) scale(0.95);
-}
 
-.align-right.slide-in1 {
-  transform: translateX(50%) scale(0.95);
-}
-
-.slide-in.active {
-  opacity: 1;
-  transform: translateX(0%) scale(1);
-}
-.slide-in1.active {
-  opacity: 1;
-  transform: translateX(0%) scale(1);
-}
 .home {
   position: fixed;
   background-image: url(image/cocktailnew.png);
   height: 300px;
   width: 300px;
   background-size: 100%;
-  right: -3%;
-  top: 60%;
+  right: 0%;
+  top: 55%;
   z-index: 1;
 }
 .home:hover {
-  background-image: url(image/cocktailnew.png);
+  background-image:url(image/cocktailnew.gif);
   transition: 0.1s 0.1s;
   transform: scale(1);
   animation-duration: 0.3s;
@@ -354,12 +353,12 @@ transition: all .5s;
   height: 400px;
   width: 400px;
   background-size: 100%;
-  right: -16%;
+  right: -13%;
   top: 92%;
   z-index: 1;
 }
 .align-left.slide-in {
-  transform: translateX(-50%) scale(0.95);
+  transform: translateX(0%) scale(0.95);
 }
 
 .align-right.slide-in1 {
@@ -460,7 +459,7 @@ transition: all .5s;
 
   .style {
     position: absolute;
-    /* background-image: url(image/style.png); */
+    background-image: url(image/style.png);
     background-size: 100%;
     top: 5%;
     left: -10%;
@@ -471,7 +470,7 @@ transition: all .5s;
   }
   
   .style:hover {
-    /* background-image:url(image/style.gif); */
+    background-image:url(image/style.gif);
     transition: 0.1s 0.1s;
     transform: scale(1);
     animation-duration: 0.3s;
@@ -550,4 +549,36 @@ transition: all .5s;
         transform: scale(1.0);
     }
   }
+
+
+.videos-wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.video{
+    position: relative;
+    margin: 0 auto 5%;
+    padding: 0 0 56.25%;
+    height: auto;
+    width: 100% !important;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.social{
+  position: relative; 
+  top:100px;
+  text-align: center;  
+  color: #3C3C3C;
+  font-size: 18px;
+    display: flex;
+  justify-content: space-around
+  }
+
 
