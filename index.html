@@ -10,90 +10,293 @@
  <body>
    <header>
       <div class="title">
-          <h1 class="sansserif">Recipe of Classic Drinks</h1>
+          <h1 class="sansserif">Recipes of Classic Cocktails</h1>
       </div>
       <div class="menu"></div>
+
+      <style>
+        #myDIV {
+          width: 100%;
+          padding: 10px 0;
+          text-align:center;
+          background-image: url(image/oldfashioned.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        #myDIV1 {
+          width: 100%;
+          padding: 5px 0;
+          text-align:center;
+          background-image: url(image/manhattan.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        #myDIV2 {
+          width: 100%;
+          padding: 5px 0;
+          text-align:center;
+          background-image: url(image/daiquiri.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        #myDIV3 {
+          width: 100%;
+          padding: 5px 0;
+          text-align:center;
+          background-image: url(image/cuba\ libre.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        #myDIV4 {
+          width: 100%;
+          padding: 5px 0;
+          text-align:center;
+          background-image: url(image/white\ russian.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        #myDIV5 {
+          width: 100%;
+          padding: 5px 0;
+          text-align:center;
+          background-image: url(image/negroni.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        #myDIV6 {
+          width: 100%;
+          padding: 5px 0;
+          text-align:center;
+          background-image: url(image/boulevardier.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        #myDIV7 {
+          width: 100%;
+          padding: 5px 0;
+          text-align:center;
+          background-image: url(image/sidecar.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        #myDIV8 {
+          width: 100%;
+          padding: 5px 0;
+          text-align:center;
+          background-image: url(image/tequila\ sunrise.JPG);
+          height: 400px;
+          width: 400px;
+          background-size: 100%;
+          margin-top: 5px;
+        }
+        </style>
+
     </header>
     
    
 
 
     <div id="Section" class="wrapper">
+      <div class="arrow"></div>
       <div class="intro">
        
+        <br></br>
+        <p class="sansserif">scroll down</p>
         <svg width="800" height="800"></svg>
      </div>
 
 
     <nav class="dots">
+      <div class= list>
+
       <ul>
-        <li><a data-link="section-1">OldFashioned</a></li>
-        <li><b data-link="section-2">Manhattan</b></li>
-        <li><c data-link="section-3">Daiquiri</c></li>
-        <li><d data-link="section-4">CubaLibre</d></li>
-        <li><e data-link="section-1">WhiteRussian</e></li>
-        <li><f data-link="section-2">Negroni</f></li>
-        <li><g data-link="section-3">Boulevardier</g></li>
-        <li><h data-link="section-4">Sidecar</h></li>
-        <li><i data-link="section-4">TequilaSunrise</i></li>
+        <li><a data-link="section-1"><p id="demo" onclick="OldFashioned()">OldFashioned(30%-35%)</p></a></li>
+
+        <div id="myDIV">
+          Sugar+Bourbon+Bitters
+        </div>
+        <li><k data-link="section-2"><p id="demo" onclick="Manhattan()">Manhattan(30%-35%)</p></k></li>
+        <div id="myDIV1">
+          Rye+Sweet Vermouth+Bitters 
+        </div>
+        <li><c data-link="section-3"><p id="demo" onclick="Daiquiri()">Daiquiri(30%)</p></c></li>
+        <div id="myDIV2">
+          Light Rum+Lime juice+sugar
+        </div>
+        <li><d data-link="section-4"><p id="demo" onclick="CubaLibre()">CubaLibre(10%-15%)</p></d></li>
+        <div id="myDIV3">
+          Dark Rum+Cola+Lime Juice 
+        </div>
+        <li><e data-link="section-1"><p id="demo" onclick="WhiteRussian()">WhiteRussian(25%-30%)</p></e></li>
+        <div id="myDIV4">
+          Vodka+Kahlua+Cream
+        </div> 
+        <li><f data-link="section-2"><p id="demo" onclick="Negroni()">Negroni(23%)</p></f></li>
+        <div id="myDIV5">
+          Gin+Campari+Sweet Vermouth
+        </div> 
+       
+        <li><g data-link="section-3"><p id="demo" onclick="Boulevardier()">Boulevardier(22%)</p></g></li>
+        <div id="myDIV6">
+          Whisky+Campari+Sweet Vermouth
+        </div> 
+        <li><h data-link="section-4"><p id="demo" onclick="Sidecar()">Sidecar(20%-25%)</p></h></li>
+        <div id="myDIV7">
+          Brandy+Orange Liqueur+Lemon Juice 
+        </div> 
+        <li><j data-link="section-1"><p id="demo" onclick="TequilaSunrise()">TequilaSunrise(10%-15%)</p></j></li>
+        <div id="myDIV8">
+          Tequila+Orange Juice+Grenadine
+        </div> 
 
       </ul>
     </nav>
+    
+    <script>
+    function OldFashioned() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    function Manhattan() {
+      var x = document.getElementById("myDIV1");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function Daiquiri() {
+      var x = document.getElementById("myDIV2");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function CubaLibre() {
+      var x = document.getElementById("myDIV3");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function WhiteRussian() {
+      var x = document.getElementById("myDIV4");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function Negroni() {
+      var x = document.getElementById("myDIV5");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function Boulevardier() {
+      var x = document.getElementById("myDIV6");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function Sidecar() {
+      var x = document.getElementById("myDIV7");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function TequilaSunrise() {
+      var x = document.getElementById("myDIV8");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+    navLinks.forEach(function(element) {
+element.addEventListener('click', function(e) {
+e.preventDefault();
+
+let target = this.dataset.link;
+
+scrollSection(target);
+});
+});
+
+window.addEventListener('scroll', function() {
+animateStuff();
+});
+function startabout() {
+scrollSection(navLinks[1].dataset.link)
+}
+function startct() {
+  scrollSection(navLinks[3].dataset.link)
+  }
+
+function startpfo() {
+  scrollSection(navLinks[2].dataset.link)
+  }
+function home() {
+  scrollSection(navLinks[0].dataset.link)
+  }
+  </script>
+     
+  <section id="section-1">
 
   
-     <div class="rect slide-in align-left"></div>
-    <div class="home" onclick="home()"> </div>
-    <div class="back">back to top</div>
-  <section id="section-1">
-    <h1>Search for the images here<h1>
-      <div class="rect slide-in align-left"></div>
-      <select name="search name" id="search name">
-        <option value="Old Fashioned">Old Fashioned</option>
-        <option value="White Russian">White Russian</option>
-        <option value="Manhattan">Manhattan</option>
-        <option value="Daquiri">Daquiri</option>
-        <option value="Negroni">Negroni</option>
-        <option value="Sidecar">Sidecar</option>
-        <option value="Cuba Libre">Cuba Libre</option>
-        <option value="Boulevardier">Boulevardier</option>
-        <option value="Tequila Sunrise">Tequila Sunrise</option>
-        </select>
+     
+ 
     
   </section>
   <section id="section-2">
-    <h1>Recipe List</h1>
-    <div class= list>
-    <h2>Old Fashioned</h2>
-    <p class="sansserif">"Sugar","Bourbon","Bitters" (30%-35%)</p>
-    <h2>White Russian</h2>
-    <p class="sansserif">"Vodka","Kahlua","Cream" (25%-30%)</p>
-    <h2>Manhattan</h2>
-    <p class="sansserif">"Rye","Sweet Vermouth","Bitters" (30%-35%)</p>
-    <h2>Daiquiri</h2>
-    <p class="sansserif">"Light Rum","Lime juice","sugar" (30%)</p>
-    <h2>Negroni</h2>
-    <p class="sansserif">"Gin","Campari","Sweet Vermouth" (23%)</p>
-    <h2>Sidecar</h2>
-    <p class="sansserif">"Brandy","Orange Liqueur","Lemon Juice" (20%-25%)</p>
-    <h2>Cuba Libre</h2>
-    <p class="sansserif">"Dark Rum","Cola","Lime Juice" (10%-15%) </p>
-    <h2>Boulevardier</h2>
-    <p class="sansserif">"Whisky","Campari","Sweet Vermouth" (22%)</p>
-    <h2>Tequila Sunrise</h2>
-    <p class="sansserif">"Tequila","Orange Juice","Grenadine" (10%-15%)</p>
+   
+  </section>
+  <section id="section-3">
+    <div class="title">
+      <h1 class="sansserif">About me</h1>
+  </div>
+ 
+  
+    <div class="rect slide-in align-left"></div>
+    <div class="home" onclick="home()"> </div>
+    <div class="back">back to top</div>
+    <div class="self"> 
+    <p class="sansserif">I am a student in School of Visual Arts from Taiwan.</p>
+    <p class="sansserif">I enjoy telling stories and bringing my experience into the process of creating motion graphics. </p>
+    <p class="sansserif"> I am a cocktail lover. Thus, I build this Data visualization website to share some information of some common cocktails.</p>
     </div>
   </section>
-  
-  <section id="section-3">
-    <h1>About me</h1>
-    <div class="self"> 
-      <p class="sansserif">Hi, my name is Ellie. I am a cocktail lover.</p>
-      <p class="sansserif">Hope you can learn more about the cocktails you like or even explore new ones! </p>
-  </section>
-
- 
-
   </div>
+  
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <script> 
   var svg = d3.select("svg");
@@ -216,13 +419,15 @@ var link = svg
   .enter()
   .append("g")
   .append("circle")
-  .attr("r", 10)
+  .attr("r", 12)
   .attr("fill",function(d){
     return color(d.group);
   })
   .attr("stroke", function(d) {
     return color(d.group);
-  });
+  })
+
+  
 
   function ticked(){
     link 
@@ -248,7 +453,57 @@ var link = svg
   }
 
 
+  drag = simulation => {
+  
+  function dragstarted(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+  
+  function dragged(event, d) {
+    d.fx = event.x;
+    d.fy = event.y;
+  }
+  
+  function dragended(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+  }
+  
+  return d3.drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended);
+}
+  
+drag = simulation => {
+  
+  function dragstarted(event, d) {
+    if (!event.active) simulation.alphaTarget(0.3).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+  
+  function dragged(event, d) {
+    d.fx = event.x;
+    d.fy = event.y;
+  }
+  
+  function dragended(event, d) {
+    if (!event.active) simulation.alphaTarget(0);
+    d.fx = null;
+    d.fy = null;
+  }
+  
+  return d3.drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended);
+}
  </script>
+
   
 </body>
 </html>
