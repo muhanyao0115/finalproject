@@ -3,31 +3,30 @@
  <head> 
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800&display=swap">
-    <link rel="stylesheet" href="style.css">
- 
+    <link rel="stylesheet" href="css/style.css">
 
  </head>  
  <body>
    <header>
       <div class="title">
-          <h1 class="sansserif">Recipe of Classic Drinks</h1>
+          <h1 class="sansserif">Muhan Yao</h1>
       </div>
       <div class="menu"></div>
     </header>
-    
-    <div class= search>
-      <p class="sansserif">Hello! Welcome to Recipe of Classic Drinks.</p>
-      <p class="sansserif">You can play around the data visualiztion to find out the ingredients of some famous drinks!</p>
-      <p class="sansserif">  Hope you enjoy it! </p>
-     </div>
-
 
     <div id="Section" class="wrapper">
       <div class="intro">
-       
-        <svg width="960" height="600"></svg>
+         
      </div>
 
+    <div class="icons">
+      <div data-section="portfolio" class="link portfolio" onclick="startpfo()"></div>
+      <div data-section="about" class="link about" onclick="startabout()"></div>
+      <div data-section="section" class="sound"></div>
+      <div data-section="section" class="style" onclick="'bg'='bg1'"></div>
+      <div data-section="contact" class="link contact" onclick="startct()"></div>
+      <div data-section="section" class="bg"></div>
+    </div>
 
     <nav class="dots">
       <ul>
@@ -37,149 +36,68 @@
         <li><a data-link="section-4">4</a></li>
       </ul>
     </nav>
-    <div class="home" onclick="home()"> </div>
-    <div class="back">search result</div>
+  
   <section id="section-1">
-    <h1>Search for the images here<h1>
-      <select name="search name" id="search name">
-        <option value="Old Fashioned">Old Fashioned</option>
-        <option value="White Russian">White Russian</option>
-        <option value="Manhattan">Manhattan</option>
-        <option value="Daquiri">Daquiri</option>
-        <option value="Negroni">Negroni</option>
-        <option value="Sidecar">Sidecar</option>
-        <option value="Cuba Libre">Cuba Libre</option>
-        <option value="Boulevardier">Boulevardier</option>
-        <option value="Tequila Sunrise">Tequila Sunrise</option>
-        </select>
-    
+         <p class="sansserif">Hello! I'm Ellie.</p>
+         <p class="sansserif">I am a motion designer </p>
+         <p class="sansserif">  based in Taiwan. </p>
+         <p class="sansserif">Welcome to my room!</p>
+    <p class="sansserif"><a href="https://www.behance.net/ellieyao">>>>Visit my Behance!</a></p>
   </section>
+  
   <section id="section-2">
-    <h1>Recipe List</h1>
-    <div class= list>
-    <h2>Old Fashioned</h2>
-    <p class="sansserif">"Sugar","Bourbon","Bitters" (30%-35%)</p>
-    <h2>White Russian</h2>
-    <p class="sansserif">"Vodka","Kahlua","Cream" (25%-30%)</p>
-    <h2>Manhattan</h2>
-    <p class="sansserif">"Rye","Sweet Vermouth","Bitters" (30%-35%)</p>
-    <h2>Daiquiri</h2>
-    <p class="sansserif">"Light Rum","Lime juice","sugar" (30%)</p>
-    <h2>Negroni</h2>
-    <p class="sansserif">"Gin","Campari","Sweet Vermouth" (23%)</p>
-    <h2>Sidecar</h2>
-    <p class="sansserif">"Brandy","Orange Liqueur","Lemon Juice" (20%-25%)</p>
-    <h2>Cuba Libre</h2>
-    <p class="sansserif">"Dark Rum","Cola","Lime Juice" (10%-15%) </p>
-    <h2>Boulevardier</h2>
-    <p class="sansserif">"Whisky","Campari","Sweet Vermouth" (22%)</p>
-    <h2>Tequila Sunrise</h2>
-    <p class="sansserif">"Tequila","Orange Juice","Grenadine" (10%-15%)</p>
+  
+    <h1>About</h1>
+
+    <div class="rect slide-in align-left"></div>
+    <div class="home" onclick="home()"> </div>
+    <div class="back">back to top</div>
+    <div class="self"> 
+    <p class="sansserif">I am a first-year student in School of Visual Arts from Taiwan.</p>
+    <p class="sansserif">I enjoy telling stories and bringing my experience into the process of making illustrations and motion graphics. </p>
+    <p class="sansserif"> In my spare time, I love to listen to music, watch movies, and travel to different places.</p>
     </div>
   </section>
   
   <section id="section-3">
-    <h1>About me</h1>
-    <div class="self"> 
-      <p class="sansserif">Hi, my name is Ellie. I am a cocktail lover.</p>
-      <p class="sansserif">Hope you can learn more about the cocktails you like or even explore new ones! </p>
+    <h1>Portfolio</h1>
+    <section id="portfolio" class="videos-wrapper">
+      <div class="video">    
+        <iframe src="https://player.vimeo.com/video/471794414" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://player.vimeo.com/video/476758658" allowfullscreen></iframe>
+      </div>  
+      <div class="video">   
+        <iframe src="https://player.vimeo.com/video/464596968" allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <iframe src="https://player.vimeo.com/video/482191382" allowfullscreen></iframe>
+      </div>
+      
+      </div>  
+   
+    </section>
+  </section>
+  <section id="section-4">
+    <h1>Contact</h1>
+    <footer>
+          
+      <div class="social">
+        <p class="sansserif">gmail: myao1@sva.edu.</p>
+        <p class="sansserif"> cellphone: +886988219553</p>
+      </div>
+     
+  </footer>
   </section>
 
- 
-
   </div>
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-  <script> 
-  var svg = d3.select("svg");
-  var width = svg.attr("width");
-  var height = svg.attr("height");
 
-  const graph = {
-  nodes: [
-    {name: "Old Fashioned", group: 1},
-    {name: "Manhattan", group: 2},
-    {name: "Sugar", group: 1},
-    {name: "Bourbon", group: 1},
-    {name: "Bitters", group: 1},
-    {name: "Rye", group: 1},
-    {name: "Sweet Vermouth", group: 2}
-  ],
-  links:[
-         {source:"Sugar",target:"Old Fashioned"},
-         {source:"Bourbon",target:"Old Fashioned"},
-         {source:"Bitters",target:"Old Fashioned"},
-         {source:"Rye",target:"Old Fashioned"},
-         {source:"Sweet Vermouth",target:"Old Fashioned"},
-         {source:"Bitters",target:"Old Fashioned"},
-        ]
-  };
-  console.log(graph);
+ 
+  <!-- LG: Add sound file to src attribute -->
+  <audio id="sound-file" src="css/image/audio.mp3"></audio>
 
-var simulation = d3
-.forceSimulation(graph.nodes)
-.force(
-  "link",
-  d3.forceLink(graph.links).id(function(d){
-    return d.name;
-  })
-)
-.force("charge", d3.forceManyBody(), 30)
-.force("center", d3.forceCenter(width / 2, height / 2))
-.on("tick", ticked);
-
-var link = svg
-  .append("g")
-  .selectAll("line")
-  .data(graph.links)
-  .enter()
-  .append("line")
-  .attr("stroke-width", function(d){
-    return 1;
-  })
-  .style("stroke", "pink");
-
-  //code to change colors based on group
-  var color = d3.scaleOrdinal(d3.schemeCategory10);
-
-  var node = svg
-  .append("g")
-  .selectAll("circle")
-  .data(graph.nodes)
-  .enter()
-  .append("g")
-  .append("circle")
-  .attr("r", 10)
-  .attr("fill",function(d){
-    return color(d.group);
-  })
-  .attr("stroke", function(d) {
-    return color(d.group);
-  });
-
-  function ticked(){
-    link 
-    .attr("x1", function(d){
-    return d.source.x;
-  })
-  .attr("y1", function(d){
-    return d.source.y;
-  })
-  .attr("x2", function(d){
-    return d.target.x;
-  })
-  .attr("y2", function(d){
-    return d.target.y;
-  });
-  node
-  .attr("cx", function(d){
-    return d.x;
-  })
-  .attr("cy", function(d){
-    return d.y;
-  });
-  }
-
- </script>
-  
+  <script src="js/custom.js"></script>
 </body>
 </html>
