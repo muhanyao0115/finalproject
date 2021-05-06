@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+<html>
+ <head> 
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+
+ </head>  
+ <body>
+   <header>
+      <div class="title">
+          <h1 class="sansserif">Muhan Yao</h1>
+      </div>
+      <div class="menu"></div>
+    </header>
+
+    <div id="Section" class="wrapper">
+      <div class="intro">
+         
+     </div>
+
+    <div class="icons">
+      <div data-section="portfolio" class="link portfolio" onclick="startpfo()"></div>
+      <div data-section="about" class="link about" onclick="startabout()"></div>
+      <div data-section="section" class="sound"></div>
+      <div data-section="section" class="style" onclick="'bg'='bg1'"></div>
+      <div data-section="contact" class="link contact" onclick="startct()"></div>
+      <div data-section="section" class="bg"></div>
+    </div>
+
+    <nav class="dots">
+      <ul>
+        <li><a data-link="section-1">1</a></li>
+        <li><a data-link="section-2">2</a></li>
+        <li><a data-link="section-3">3</a></li>
+        <li><a data-link="section-4">4</a></li>
+      </ul>
+    </nav>
+  
+  <section id="section-1">
+         <p class="sansserif">Hello! I'm Ellie.</p>
+         <p class="sansserif">I am a motion designer </p>
+         <p class="sansserif">  based in Taiwan. </p>
+         <p class="sansserif">Welcome to my room!</p>
+    <p class="sansserif"><a href="https://www.behance.net/ellieyao">>>>Visit my Behance!</a></p>
+  </section>
+  
+  <section id="section-2">
+  
+    <h1>About</h1>
+
+    <div class="rect slide-in align-left"></div>
+    <div class="home" onclick="home()"> </div>
+    <div class="back">back to top</div>
+    <div class="self"> 
+    <p class="sansserif">I am a first-year student in School of Visual Arts from Taiwan.</p>
+    <p class="sansserif">I enjoy telling stories and bringing my experience into the process of making illustrations and motion graphics. </p>
+    <p class="sansserif"> In my spare time, I love to listen to music, watch movies, and travel to different places.</p>
+    </div>
+  </section>
+  
+  <section id="section-3">
+    <h1>Portfolio</h1>
+    <section id="portfolio" class="videos-wrapper">
+      <div class="video">    
+        <iframe src="https://player.vimeo.com/video/471794414" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://player.vimeo.com/video/476758658" allowfullscreen></iframe>
+      </div>  
+      <div class="video">   
+        <iframe src="https://player.vimeo.com/video/464596968" allowfullscreen></iframe>
+      </div>
+
+      <div class="video">
+        <iframe src="https://player.vimeo.com/video/482191382" allowfullscreen></iframe>
+      </div>
+      
+      </div>  
+   
+    </section>
+  </section>
+  <section id="section-4">
+    <h1>Contact</h1>
+    <footer>
+          
+      <div class="social">
+        <p class="sansserif">gmail: myao1@sva.edu.</p>
+        <p class="sansserif"> cellphone: +886988219553</p>
+      </div>
+     
+  </footer>
+  </section>
+
+  </div>
+
+ 
+  <!-- LG: Add sound file to src attribute -->
+  <audio id="sound-file" src="css/image/audio.mp3"></audio>
+
+  <script src="js/custom.js"></script>
+</body>
+</html>

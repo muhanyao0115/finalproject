@@ -1,0 +1,478 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+*{font-family: 'Sansita Swashed', cursive;}
+    
+body {
+  background-color: #fff6e4;
+  box-sizing: border-box;
+  padding: 0 0%;
+  width: 100%;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 2px;
+}
+
+*{
+  font-family: 'Sansita Swashed', cursive;
+}
+
+a:link {
+  color:  #ffbebe;
+}
+
+/* visited link */
+a:visited {
+  color: #ffbebe;
+}
+
+/* mouse over link */      
+a:hover {
+  color: #63B0CD;
+}
+
+/* selected link */
+a:active {
+  color:#63B0CD;
+}
+
+header {
+  margin: 5% 0;
+  padding: 0 5%;
+}
+
+.wrapper {
+  display: block;
+  margin-bottom: 100%;
+  width: 100vw;
+}
+
+.intro{
+  display: inline-block;
+  padding: 0 0 0 1%;
+  width: 48%;
+  color:#FF4934;
+  font-size: 1.5em;
+  line-height: 200%;
+}
+
+
+
+.videos-wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.video{
+    position: relative;
+    margin: 0 auto 5%;
+    padding: 0 0 56.25%;
+    height: auto;
+    width: 100% !important;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+  font-size: 30px;
+}
+
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+h1 {
+  margin-top: 0;
+  color: #000000;
+  font-size: 60px;
+}
+
+section {
+  padding: 8% 6%;
+  height: 100vh;
+  width: 100vw;
+}
+
+.self{
+  float: right;
+  margin-top: 5vh;
+
+}
+
+section:first-of-type {
+  background: #fff6e4;
+  height: 45vh;
+}
+
+section:nth-of-type(2) {
+  background: #63B0CD;
+  height: 120vh;
+}
+
+section:nth-of-type(3) {
+  background: #fff6e4;
+  height:120vh;
+}
+
+section:nth-of-type(4) {
+  background: #ffbebe;
+  height: 50vh;
+}
+
+.dots {
+  position: fixed;
+  left: 2%;
+  top: 80%;
+  z-index: 1;
+}
+
+.dots ul {
+  list-style-type: none;
+}
+
+.dots a {
+  background:#000000;
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 10px;
+  height: 10px;
+  width: 10px;
+  /* hide text  */
+  text-indent: -9999px;
+}
+
+.dots a.current {
+  background: grey;
+}
+
+
+.rect {
+  background:#63B0CD;
+  height: 500px;
+  width: 500px;
+}
+
+.align-left {
+  float: left;
+  margin-top: 5vh;
+  
+}
+
+.align-right {
+  float: right;
+  margin-top: 5vh;
+  margin-left: 20px;
+}
+
+.slide-in {
+ 
+    background-image: url(image/selfie.jpg);
+    height: 500px;
+    width: 500px;
+    background-size: 100%;
+ 
+  opacity: 0;
+  transition: all .5s;
+}
+
+.slide-in1 {
+ 
+  background-image: url(image/style.png);
+  height: 100px;
+  width: 100px;
+  background-size: 100%;
+
+opacity: 0;
+transition: all .5s;
+}
+
+.slide-in1:hover {
+  background-image:url(image/style.gif);
+  transition: 0.1s 0.1s;
+  transform: scale(1);
+  animation-duration: 0.3s;
+  animation-name: yeah;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.home {
+  position: fixed;
+  background-image: url(image/style.png);
+  height: 400px;
+  width: 400px;
+  background-size: 100%;
+  right: -3%;
+  top: 60%;
+  z-index: 1;
+}
+.home:hover {
+  background-image:url(image/style.gif);
+  transition: 0.1s 0.1s;
+  transform: scale(1);
+  animation-duration: 0.3s;
+  animation-name: yeah;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.back {
+  position: fixed;
+  height: 400px;
+  width: 400px;
+  background-size: 100%;
+  right: -13%;
+  top: 92%;
+  z-index: 1;
+}
+.align-left.slide-in {
+  transform: translateX(-50%) scale(0.95);
+}
+
+.align-right.slide-in1 {
+  transform: translateX(50%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+.slide-in1.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+.icons {
+  display: inline-block;
+  padding-bottom: 40%;
+  width: 30%;
+  position: absolute;
+}
+
+.portfolio {
+  /* display: block; */
+  background-image: url(image/portfolio.png);
+  height: 600px;
+  width: 600px;
+  background-size: 100%;
+  position: absolute;
+  top: 0%;
+  left:-100%;
+  z-index: 4;
+}
+
+.portfolio:hover {
+  background-image:url(image/portfolio.gif);
+  transition: 0.1s 0.1s;
+  transform: scale(1);
+  animation-duration: 0.3s;
+  animation-name: loolyeah;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes loolyeah{
+  0%{
+      transform: scale(1.0);
+  }
+  100%{
+      transform: scale(1.0);
+  }
+}
+
+  .sound {
+    position: absolute;
+    background-image: url(image/sound.png);
+    background-size: contain;
+    top: 0%;
+    left: 60%;
+    height: 600px;
+    width: 600px;
+    z-index:1;
+    cursor: pointer;
+  }
+  .sound:hover {
+    background-image:url(image/sound.gif);
+    transition: 0.1s 0.1s;
+    transform: scale(1);
+    animation-duration: 0.3s;
+    animation-name: looyeah;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes looyeah{
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+  }
+
+  .bg {
+    position: absolute;
+    background-image: url(image/day.gif);
+    background-size: 100% ;
+    top: -10%;
+    left: -92%;
+    height: 675px;
+    width: 1200px;
+    z-index:0;
+  }
+  
+  .bg.night {
+    background-image: url(image/night.gif);
+  }
+  
+
+  .style {
+    position: absolute;
+    background-image: url(image/style.png);
+    background-size: 100%;
+    top: 5%;
+    left: -10%;
+    height: 600px;
+    width:600px;
+    z-index:6;
+    cursor: pointer;
+  }
+  
+  .style:hover {
+    background-image:url(image/style.gif);
+    transition: 0.1s 0.1s;
+    transform: scale(1);
+    animation-duration: 0.3s;
+    animation-name: lolyeah;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes lolyeah{
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+  }
+
+.about {
+    position: absolute;
+    cursor: pointer;
+    background-image: url(image/about.png);
+    background-size:100%;
+    top: -12%;
+    left: -40%;
+    height: 650px;
+    width: 650px;
+    z-index:5;
+  }
+
+  .about:hover {
+    background-image:url(image/about.gif);
+    transition: 0.1s 0.1s;
+    transform: scale(1);
+    animation-duration: 0.3s;
+    animation-name: ohyeah;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes ohyeah{
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+  }
+
+  .contact {
+    position: absolute;
+    cursor: pointer;
+    background-image: url(image/Contact.png);
+    background-size: 100%;
+    top: -40%;
+    left: 20%;
+    height: 600px;
+    width: 600px;
+    z-index: 3;
+  }
+
+  .contact:hover {
+    background-image:url(image/contact.gif);
+    transition: 0.1s 0.1s;
+    transform: scale(1);
+    animation-duration: 0.3s;
+    animation-name: yeah;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+  }
+  
+  @keyframes yeah{
+    0%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+  }
+
+
+.videos-wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.video{
+    position: relative;
+    margin: 0 auto 5%;
+    padding: 0 0 56.25%;
+    height: auto;
+    width: 100% !important;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.social{
+  position: relative; 
+  top:100px;
+  text-align: center;  
+  color: #3C3C3C;
+  font-size: 18px;
+    display: flex;
+  justify-content: space-around
+  }
